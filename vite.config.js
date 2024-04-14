@@ -5,6 +5,7 @@ export default defineConfig({
   base: '/coca/',
   server: {
     port: 3000,
+    open: true,
   },
   publicDir: './src/assets',
   build: {
