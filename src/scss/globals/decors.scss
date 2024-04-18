@@ -45,7 +45,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: var(--z-index-0);
     display: inline-block;

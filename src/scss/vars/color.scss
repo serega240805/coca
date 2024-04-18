@@ -1,5 +1,5 @@
 :root {
-    // neutral colors
+  // neutral colors
   --neutral-color-10: #fff;
   --neutral-color-20: #f5f5f5;
   --neutral-color-30: #ededed;
@@ -30,20 +30,19 @@
   --black-bg-color: #1d1e25;
 }
 
-[data-theme='dark'] {
-    // neutral colors
-    --neutral-color-10: #1d1e25;
-    --neutral-color-100: #fff;
-    --neutral-color-140: #fff;
-  
-    // logo colors
-    --logo-color-text: #fff;
-    --logo-color-circle: #343542;
-  
-    // success colors
-    --success-color-70: #e2f8f033;
-  
-    // overview colors
-    --black-bg-color: #18181d;
-  }
-  
+[data-theme="dark"] {
+  // neutral colors
+  --neutral-color-10: #1d1e25;
+  --neutral-color-100: #fff;
+  --neutral-color-140: #fff;
+
+  // logo colors
+  --logo-color-text: #fff;
+  --logo-color-circle: #343542;
+
+  // success colors
+  --success-color-70: #e2f8f033;
+
+  // overview colors
+  --black-bg-color: #18181d;
+}
