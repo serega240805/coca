@@ -1,0 +1,10 @@
+@import "./mixins";
+@import "./base";
+@import "./vars";
+@import "./globals";
+
+// conponents
+@import "./components/header";
+@import "./components/contact/hero";
+@import "./components/partners";
+@import "./components/footer";
