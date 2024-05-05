@@ -1,0 +1,148 @@
+.our-team {
+  padding: 160px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    right: 0;
+    bottom: 900px;
+    width: 525px;
+    height: 525px;
+    background: var(--success-color-70);
+    filter: blur(180px);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 890px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__qoute {
+    margin-bottom: 80px;
+    max-width: 534px;
+    font-weight: 500;
+    line-height: 178%;
+    color: var(--neutral-color-150);
+
+    @include tablet {
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 100px;
+
+    @include small-tablet {
+      margin-bottom: 60px;
+    }
+
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 180px;
+      left: 394px;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      transform: translateX(-50%);
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__slide {
+    max-width: 379px;
+
+    &-img {
+      margin-bottom: 16px;
+    }
+
+    &-footer {
+      @include flex-all-between;
+      align-items: flex-start;
+    }
+
+    &-name {
+      margin-bottom: 8px;
+      font-weight: 600;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+    }
+
+    &-proffession {
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+
+    &-socials {
+      @include flex-align-center;
+      gap: 8px;
+
+      &-link {
+        @include flex-all-center;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: #161a341a;
+      }
+    }
+  }
+
+  &__footer {
+    @include flex-all-between;
+
+    @include tablet {
+      gap: 40px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &-title {
+      max-width: 626px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+    }
+
+    &-right {
+      max-width: 506px;
+    }
+
+    &-text {
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+    }
+
+    &-link {
+      font-weight: 600;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+    }
+  }
+}
