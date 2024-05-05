@@ -1,0 +1,186 @@
+header {
+  h1 {
+    display: none;
+  }
+}
+
+.article {
+  padding: 80px 0 160px;
+
+  @include tablet {
+    padding: 40px 0 120px;
+  }
+
+  @include mobile {
+    padding: 40px 0 60px;
+  }
+
+  &__container {
+    max-width: 940px;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__body {
+    &-header {
+      @include flex-all-between;
+      align-items: flex-end;
+      margin-bottom: 24px;
+
+      @include mobile {
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-descr {
+      margin-bottom: 56px;
+      font-weight: 400;
+      line-height: 178%;
+      color: var(--neutral-color-100);
+
+      @include mobile {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 24px;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+      color: var(--neutral-color-140);
+    }
+  }
+
+  &__header-author {
+    @include flex-align-center;
+    gap: 24px;
+    font-style: normal;
+
+    &-avatar {
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    &-name {
+      font-weight: 600;
+      line-height: 144%;
+      color: var(--neutral-color-100);
+    }
+  }
+
+  &__professions {
+    font-weight: 500;
+    line-height: 162%;
+    color: var(--neutral-color-150);
+  }
+
+  &__date {
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--neutral-color-150);
+  }
+
+  &__img {
+    margin-bottom: 80px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__author {
+    @include flex-all-between;
+    gap: 48px;
+    align-items: flex-start;
+    font-style: normal;
+
+    @include mobile {
+      gap: 24px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &-text {
+      margin-bottom: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+
+    &-name {
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 131%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+    }
+
+    &-professions {
+      margin-bottom: 16px;
+      font-weight: 500;
+      line-height: 162%;
+      color: var(--neutral-color-150);
+    }
+
+    &-skills {
+      font-weight: 400;
+      line-height: 178%;
+      color: var(--neutral-color-100);
+    }
+  }
+
+  &__socials {
+    @include flex-align-center;
+    gap: 32px;
+    margin-bottom: 17px;
+
+    @include mobile {
+      justify-content: center;
+    }
+
+    &-link {
+      @include flex-all-center;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      background-color: var(--neutral-color-30);
+    }
+
+    &-item {
+      &:first-child {
+        /* stylelint-disable-next-line selector-class-pattern */
+        .article__socials-link {
+          background-color: #fff;
+        }
+      }
+
+      &:last-child {
+        @include small-tablet {
+          display: none;
+        }
+      }
+    }
+
+    &-text {
+      font-weight: 500;
+      line-height: 162%;
+      color: var(--neutral-color-100);
+
+      @include small-tablet {
+        display: none;
+      }
+    }
+  }
+}
