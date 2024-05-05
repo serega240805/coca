@@ -1,0 +1,121 @@
+.articles {
+  padding: 160px 0 140px;
+
+  @include tablet {
+    padding: 80px 0 70px;
+  }
+
+  @include small-tablet {
+    padding: 40px 0;
+  }
+
+  &__header {
+    @include flex-all-between;
+    margin-bottom: 80px;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+        gap: 20px;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include mobile {
+        text-align: center;
+    }
+  }
+
+  &__descr {
+    max-width: 435px;
+    font-weight: 500;
+    line-height: 178%;
+    color: var(--neutral-color-150);
+
+    @include mobile {
+        text-align: center;
+    }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    gap: 16px;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid var(--neutral-color-40);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      border-color: var(--neutral-color-100);
+      background-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+
+    &--next {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__slide {
+    padding-bottom: 20px;
+    max-width: 405px;
+  }
+
+  &__slide-img {
+    margin-bottom: 24px;
+  }
+
+  &__slide-title {
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    color: var(--neutral-color-100);
+  }
+
+  &__slide-descr {
+    margin-bottom: 24px;
+    font-weight: 500;
+    line-height: 178%;
+    color: var(--neutral-color-150);
+  }
+
+  &__slide-link {
+    border: 1px solid var(--neutral-color-40);
+    padding: 16px 46px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--neutral-color-100);
+  }
+}
