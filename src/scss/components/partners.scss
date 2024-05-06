@@ -37,13 +37,29 @@
     }
   }
 
+  &__slider {
+    display: none !important;
+
+    @include mobile {
+      display: block !important;
+    }
+  }
+
+  &__slide {
+    display: flex !important;
+    min-height: 90px;
+    max-width: 160px;
+  }
+
   &__list {
     @include flex-all-center;
     gap: 10px 30px;
     flex-wrap: wrap;
 
     @include mobile {
-      gap: 10px;
+      &--hide {
+        display: none;
+      }
     }
   }
 
