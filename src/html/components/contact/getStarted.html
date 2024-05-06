@@ -13,7 +13,7 @@
           hellosansbrothers@gmail.com
         </a>
       </p>
-      <form class="get-started__form">
+      <form id="myForm" class="get-started__form">
         <div class="get-started__form-top">
           <label class="get-started__form-label">
             <span class="get-started__form-label-text text-p-small">
@@ -22,8 +22,11 @@
             <input
               type="text"
               class="get-started__form-input text-p-small get-started__form-input--small"
+              id="first-name"
               name="first-name"
               required
+              minlength="2"
+              maxlength="32"
               placeholder="First name"
             />
           </label>
@@ -34,8 +37,11 @@
             <input
               type="text"
               class="get-started__form-input text-p-small get-started__form-input--small"
+              id="last-name"
               name="last-name"
               required
+              minlength="2" 
+              maxlength="32"
               placeholder="Last name"
             />
           </label>
@@ -45,6 +51,7 @@
           <input
             type="email"
             class="get-started__form-input text-p-small"
+            id="email"
             name="email"
             required
             placeholder="you@company.com"
@@ -70,7 +77,8 @@
             type="text"
             class="get-started__form-input get-started__form-input--textarea text-p-small"
             name="message"
-            required
+            minlength="10" 
+            maxlength="200"
             placeholder="Leave us a message..."
           ></textarea>
         </label>
