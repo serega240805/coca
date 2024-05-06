@@ -34,7 +34,7 @@ export const usePriceSwitcher = () => {
   switcher.checked = true;
   setPricesWitchSale();
 
-  switcher.addEventListener('click', () => {
+  switcher.addEventListener("click", () => {
     if (switcher.checked) {
       setPricesWitchSale();
     } else {

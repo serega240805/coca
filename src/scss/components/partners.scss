@@ -26,8 +26,8 @@
     color: var(--neutral-color-150);
 
     @include small-mobile {
-        gap: 10px;
-      }
+      gap: 10px;
+    }
 
     &-num {
       font-weight: 600;

@@ -5,7 +5,9 @@ export const useForm = () => {
   const form = document.querySelector("#myForm"); // Assuming form has this ID
 
   // Get all input elements within the form
-  const inputs = form.querySelectorAll("input[type='text'], input[type='email']");
+  const inputs = form.querySelectorAll(
+    "input[type='text'], input[type='email']",
+  );
 
   const validateForm = () => {
     let isValid = true; // Use a flag to track overall validity

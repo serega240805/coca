@@ -131,8 +131,8 @@
     color: var(--neutral-color-100);
 
     @include mobile {
-        margin-bottom: 20px;
-      }
+      margin-bottom: 20px;
+    }
   }
 
   &__descr {
@@ -143,7 +143,7 @@
     color: var(--neutral-color-150);
 
     @include mini-desktop {
-        max-width: 700px
+      max-width: 700px;
     }
   }
 
@@ -152,8 +152,8 @@
     gap: 32px;
 
     @include mobile {
-        gap: 22px;
-      }
+      gap: 22px;
+    }
   }
 
   &__item {
@@ -165,8 +165,8 @@
     color: var(--neutral-color-100);
 
     @include mini-desktop {
-        max-width: 700px;
-      }
+      max-width: 700px;
+    }
 
     &::before {
       content: url("../assets/icons/features-tick-icon.svg");

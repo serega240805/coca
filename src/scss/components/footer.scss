@@ -7,27 +7,26 @@
     padding-top: 62px;
   }
 
-
   &__head {
     @include flex-all-between;
     margin-bottom: 134px;
 
     @include tablet {
-        gap: 40px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 84px;
-      }
-  
-      @include mobile {
-        align-items: center;
-        margin-bottom: 64px;
-        text-align: center;
-      }
-  
-      @include small-mobile {
-        margin-bottom: 44px;
-      }
+      gap: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 84px;
+    }
+
+    @include mobile {
+      align-items: center;
+      margin-bottom: 64px;
+      text-align: center;
+    }
+
+    @include small-mobile {
+      margin-bottom: 44px;
+    }
   }
 
   &__title {
@@ -37,12 +36,12 @@
     line-height: 120%;
 
     @include tablet {
-        font-size: 54px;
-      }
-  
-      @include mobile {
-        font-size: 42px;
-      }
+      font-size: 54px;
+    }
+
+    @include mobile {
+      font-size: 42px;
+    }
   }
 
   &__descr {
@@ -161,7 +160,7 @@
       color: var(--neutral-color-150);
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         bottom: -5px;
@@ -231,7 +230,7 @@
       color: #fff;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         bottom: -5px;
