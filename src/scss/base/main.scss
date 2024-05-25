@@ -71,10 +71,6 @@ label {
   cursor: pointer;
 }
 
-main {
-  padding-top: 118px;
-}
-
 [class*="__container"] {
   max-width: calc(var(--container-width) + (var(--container-padding) * 2));
   padding: 0 var(--container-padding);
